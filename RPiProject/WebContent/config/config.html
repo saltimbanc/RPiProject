@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RPI Project</title>
+<meta name="description" content="Raspberry Pi controller">
+<meta name="author" content="Turbatu Dumitru Titus">
+<link rel="stylesheet" href="switch.css">
+<link rel="stylesheet" href="checkbox.css">
+<link rel="stylesheet" href="input.css">
+<link rel="stylesheet" href="style.css">
+<script src="jquery-3.1.0.min.js"></script>
+<script src="logic.js"></script>
+</head>
+<body>
+	<div id="main">
+		<button id="homeBtn">Home</button>
+		<button id="logsBtn">Logs</button>
+		<div id="outputPins">
+			<div id="pinsStateTitle">
+				<strong>Output pins default state</strong>
+			</div>
+		</div>
+		<div id="inputPins">
+			<div id="pinsStateTitle">
+				<strong>Input pins</strong>
+			</div>
+			<div id="stateMappingCon">
+				Show HIGH as: <select id="stateMapping">
+					<option value="on" selected>ON</option>
+					<option value="off">OFF</option>
+				</select>
+			</div>
+		</div>
+		<div id="pinsMappingCon">
+		<h3>Pins Mapping</h3>
+			<div id="outputPinsMapping">
+				<h4 id="outputPinsMappingTitle">Output Pins</h4>
+				<table>
+					<thead>
+						<tr>
+							<th>Web Page</th>
+							<th>Pi4J</th>
+						</tr>
+					</thead>
+					<tbody id="outputPinsTB">
+						
+					</tbody>
+				</table>
+			</div>
+			<div id="inputPinsMapping">
+				<h4 id="inputPinsMappingTitle">Input Pins</h4>
+				<table>
+					<thead>
+						<tr>
+							<th>Web Page</th>
+							<th>Pi4J</th>
+							<th>Resistance</th>
+						</tr>
+					</thead>
+					<tbody id="inputPinsTB">
+						
+					</tbody>
+				</table>
+			</div>
+			<button id="saveMapping">Save Mapping</button>
+		</div>
+	</div>
+</body>
+</html>

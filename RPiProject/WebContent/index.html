@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RPI Project</title>
+<meta name="description" content="Raspberry Pi controller">
+<meta name="author" content="Turbatu Dumitru Titus">
+<link rel="stylesheet" href="style.css">
+<script src="logic.js"></script>
+</head>
+
+<body>
+	<div id="stateCon">
+		<div id="stateIndicator" class="stateIndicatorDisconnected"></div>
+		<div id="stateTxt" class="stateTxtDisconnected"></div>
+	</div>
+	<button id="configBtn">Configuration</button>
+	<div id="logsBtnCon">
+		<button id="logsBtn">Logs</button>
+	</div>
+	<div id="main">
+		<div id="outPins" class="pinsColumn">
+			<h5 class="pinColumnTitle">Output Pins</h5>
+			<div id="pin1" class="outPin pinOff pin">1</div>
+			<div id="pin2" class="outPin pinOff pin">2</div>
+			<div id="pin3" class="outPin pinOff pin">3</div>
+			<div id="pin4" class="outPin pinOff pin">4</div>
+			<div id="pin5" class="outPin pinOff pin">5</div>
+			<div id="pin6" class="outPin pinOff pin">6</div>
+			<div id="pin7" class="outPin pinOff pin">7</div>
+			<div id="pin8" class="outPin pinOff pin">8</div>
+		</div>
+		<div id="inPins" class="pinsColumn">
+			<h5 class="pinColumnTitle">Input Pins</h5>
+			<div id="pin9" class="inPin pinOff pin">1</div>
+			<div id="pin10" class="inPin pinOff pin">2</div>
+			<div id="pin11" class="inPin pinOff pin">3</div>
+			<div id="pin12" class="inPin pinOff pin">4</div>
+			<div id="pin13" class="inPin pinOff pin">5</div>
+			<div id="pin14" class="inPin pinOff pin">6</div>
+			<div id="pin15" class="inPin pinOff pin">7</div>
+			<div id="pin16" class="inPin pinOff pin">8</div>
+		</div>
+		<div id="legend">
+			<div class="legendItem">
+				<div class="legendColor pin pinOn" id="legendOutOnState"></div>
+				<div class="legendTxt">Output/Input pin ON state</div>
+			</div>
+			<div class="legendItem">
+				<div class="legendColor pin pinOff" id="legendOutOffState"></div>
+				<div class="legendTxt">Output/Input pin OFF state</div>
+			</div>
+			<div class="legendItem">
+				<div class="legendColor pin pinToOn" id="legendOutOffState"></div>
+				<div class="legendTxt">Output pin changing to ON state</div>
+			</div>
+			<div class="legendItem">
+				<div class="legendColor pin pinToOff" id="legendOutOffState"></div>
+				<div class="legendTxt">Output pin changing to OFF state</div>
+			</div>
+		</div>
+		<div>
+</body>
+</html>

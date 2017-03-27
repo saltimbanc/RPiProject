@@ -1,0 +1,196 @@
+body{
+	max-width: 100%;
+	max-height: 100%;
+	background-color: #fffff8;
+}
+
+#main{
+	text-align: center;
+}
+
+#stateCon{
+	position:absolute;
+	right: 10px;
+	top:10px;
+}
+
+#stateIndicator{
+	width:15px;
+	height:15px;
+	display: inline-block;
+	border-radius: 50px;
+}
+#stateTxt{
+	display: inline-block;
+	height: 15px;
+	line-height: 15px;
+	vertical-align: text-top;
+	margin-left: 5px;
+	font-weight: bold;
+}
+
+.stateIndicatorConnecting{
+	background-color: #f16c19;
+}
+.stateTxtConnecting:before{
+	content: "Connecting...";
+}
+.stateTxtConnecting{
+	color: #f16c19;
+}
+
+.stateIndicatorConnected{
+	background-color: #13de1b;
+}
+.stateTxtConnected:before{
+	content: "Connected";
+}
+.stateTxtConnected{
+	color: #13de1b;
+}
+
+.stateIndicatorDisconnected{
+	background-color: #e80d0d;
+}
+.stateTxtDisconnected:before{
+	content: "Disconnected";
+}
+.stateTxtDisconnected{
+	color: #e80d0d;
+}
+
+#configBtn{
+	position:absolute;
+	left: 10px;
+	top: 10px;
+	font-size: 90%;
+	color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    padding: 5px 8px;
+    border-radius: 4px;
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+
+#configBtn:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+#logsBtnCon{
+	top:10px;
+	text-align: center;
+}
+
+#logsBtn{
+	font-size: 90%;
+	color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+    padding: 5px 8px;
+    border-radius: 4px;
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+
+#logsBtn:hover {
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+.pinsColumn{
+	display: inline-block;
+	margin-top:10px;
+	margin-bottom:20px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.pinColumnTitle{
+	margin-bottom: 10px;
+}
+
+.pin{
+	width: 85px;
+	height: 40px;
+	border-radius: 4px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	text-align: center;
+	line-height: 40px;
+	color: white;
+	border: 3px solid transparent;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	user-select: none;         
+}
+
+
+.outPin{
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 5px 5px 0 rgba(0,0,0,0.19);
+	cursor: pointer;
+}
+
+.outPin:hover{
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+	transition: 0.5s ease;
+}
+
+.inPin{
+	cursor: default;
+}
+
+
+.pinOn{
+	transition: 0.2s ease;
+	background-color:#4CAF50;
+}
+
+.pinOff{
+	transition: 0.2s ease;
+	background-color:#555555;
+}
+
+.pinToOn{
+	transition: 0.2s ease;
+	background: transparent;
+	border: 3px solid #4CAF50;
+	color: #4CAF50;
+}
+
+.pinToOff{
+	transition: 1s ease;
+	background: transparent;
+	border: 3px solid #555555;
+	color: #555555;
+}
+
+.outPin.pinOn:hover{
+	background-color: #5fd464;
+}
+.outPin.pinOff:hover{
+	background-color: #6f6f6f;
+}
+
+.legendItem{
+	margin-right: 15px;
+}
+.legendColor{
+	width: 25px;
+	height: 15px;
+	margin-bottom: 0px;
+}
+.legendTxt{
+	font-size: 90%;
+	height: 20px;
+	line-height: 20px;
+	vertical-align: super;
+	margin-left: 5px;
+	font-weight: bold;
+}
+.legendColor, .legendTxt, .legendItem{
+	display:inline-block;
+}

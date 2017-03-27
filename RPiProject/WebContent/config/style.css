@@ -1,0 +1,159 @@
+body{
+	max-width: 100%;
+	max-height: 100%;
+	background-color: #fffff8;
+}
+
+#main{
+	text-align: center;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	user-select: none;         
+	cursor: default;
+	margin-top: 55px;
+}
+
+#homeBtn, #saveMapping{
+	position:absolute;
+	left: 10px;
+	top: 10px;
+	font-size: 90%;
+	color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    padding: 5px 8px;
+    border-radius: 4px;
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+
+#homeBtn:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+#logsBtn{
+	position:absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 90%;
+	color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+    padding: 5px 8px;
+    border-radius: 4px;
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+
+#logsBtn:hover {
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+
+#saveMapping{
+	display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 15px auto;
+    background-color: #d9534f;
+     border-color: #d43f3a;
+}
+
+#saveMapping:hover{
+	background-color: #c9302c;
+    border-color: #ac2925;
+}
+
+
+#pinsStateTitle{
+	font-size: 120%;
+}
+
+#outputPins{
+	max-width: 1225px;
+	margin: 0 auto;
+}
+
+.wrap{
+	text-align: left;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.con{
+	margin: 5px;
+}
+
+.pinStateCon{
+	display: inline-block;
+	margin: 20px 30px;
+	vertical-align: top;
+}
+
+.pinStateTitle{
+	font-size: 110%;
+	font-weight: bold;
+	text-align: center;
+}
+
+.defaultStateLabel, .useDelayLabel{
+	/* font-weight: bold; */
+	vertical-align: top;
+	line-height: 35px;
+	margin-right: 10px;
+}
+
+/* .useDelayCon{
+	display: none;
+} */
+
+.useDelayLabel{
+	line-height: 28px;
+	margin-left: 10px;
+}
+
+#inputPins{
+	margin-top:25px;
+	margin-bottom: 15px;
+}
+
+#stateMappingCon{
+	margin-top:10px;
+	font-weight: 110%;
+	font-weight: bold;
+}
+
+#stateMapping{
+	    font-size: 120%;
+}
+
+#pinsMappingCon{
+	margin-top:30px;
+}
+
+#outputPinsMapping, #inputPinsMapping{
+	display:inline-block;
+	margin: 0px 20px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #a6a997;
+    color: white;
+}

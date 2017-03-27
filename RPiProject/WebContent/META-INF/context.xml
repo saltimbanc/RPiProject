@@ -1,0 +1,5 @@
+<Context>
+  <Resource name="jdbc/DB" auth="Container" type="javax.sql.DataSource"
+               maxTotal="10" driverClassName="org.sqlite.JDBC"
+               url="jdbc:sqlite:DB.sqlite"/>
+</Context>

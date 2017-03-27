@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RPI Project</title>
+<meta name="description" content="Raspberry Pi controller">
+<meta name="author" content="Turbatu Dumitru Titus">
+<link rel="stylesheet" href="style.css">
+<script src="jquery-3.1.0.min.js"></script>
+<script src="logic.js"></script>
+</head>
+<body>
+	<button id="homeBtn">Home</button>
+	<button id="configBtn">Configuration</button>
+	<div id="exportBtnCon">
+		<button id="exportBtn">Export Logs</button>
+	</div>
+	<div id="main">
+		<table>
+			<thead>
+				<tr>
+					<th>Who</th>
+					<th>When</th>
+					<th>What</th>
+				</tr>
+			</thead>
+			<tbody id="logs">
+			</tbody>
+		</table>
+
+	</div>
+</body>
+</html>
